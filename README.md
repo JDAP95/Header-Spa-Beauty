@@ -2,6 +2,6 @@
 
 ## _Description_
 
-Se trata de la maquetación de un header-hero con las herramientas vite, html, css, scss.
+Se trata de la maquetación de un header-hero con vite, html, css, scss.
 
 ### _Vista Previa_
