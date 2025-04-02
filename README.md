@@ -1,4 +1,4 @@
-<h1 style="text-aling: center"> Header-Hero Spa & Beauty</h1>
+<h1 align="center"> Header-Hero Spa & Beauty</h1>
 
 ## _Description_
 
