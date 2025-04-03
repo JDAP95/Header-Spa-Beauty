@@ -2,7 +2,7 @@
 
 ## _Description_
 
-Se trata de la maquetación de un header-hero con vite, html, css, scss.
+Maquetación de un header-hero con vite, html, css, scss.
 
 ### _Vista Previa_
 
