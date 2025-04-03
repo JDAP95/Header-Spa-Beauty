@@ -1,0 +1,20 @@
+@use "./variables" as v;
+
+@mixin reset-list() {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin flex-between-center() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin button() {
+    padding: 10px 30px;
+    background-color: v.$blue;
+    color: white;
+    border-radius: 20px;
+}

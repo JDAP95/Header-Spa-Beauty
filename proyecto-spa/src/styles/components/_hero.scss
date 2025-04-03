@@ -1,0 +1,128 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 0.25fr 0.75fr;
+    grid-template-rows: 1fr 0.5fr 1fr;
+    column-gap: 25px;
+
+    &-title {
+        grid-area: 1 / 1 / span 2 / span 1;
+
+        &--title {
+            color: v.$blue;
+            font-size: 46px;
+        }
+
+        &--subtitle {
+            color: v.$grey;
+            font-size: 17px;
+        }
+
+        &--options {
+            ul {
+                @include m.reset-list();
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                }
+
+                li:first-child a {
+                    @include m.button();
+                }
+            }
+
+            &---play {
+                @include m.flex-between-center();
+                color: v.$blue;
+
+                &----img {
+                    img {
+                        position: relative;
+                        top: 26px;
+                        left: 20px;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    &-items {
+        grid-area: 3 / 1 / span 1 / span 1;
+        @include m.flex-between-center();
+        padding: 32px;
+        gap: 40px;
+        color: v.$blue;
+        width: 65%;
+        position: relative;
+        bottom: 60px;
+
+        &--item {
+            text-align: center;
+            width: 30%;
+
+            &---img {
+                width: 70%;
+            }
+
+            &---title {
+                font-weight: 500;
+                font-size: 18px;
+                margin: 10px 0;
+            }
+    
+            &---subtitle {
+                font-size: 10px;
+                color: v.$grey;
+                margin: 7px;
+            }
+        }
+    }
+
+    &-testimonies {
+        grid-area: 2 / 3 / span 2 / span 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        &--testimony {
+            padding: 20px;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+            border-radius: 15px;
+            width: 70%;
+            height: 60%;
+
+            &---img {
+                width: 8%;
+            }
+
+            &---testimony {
+                color: v.$text;
+                font-size: 12px;
+                margin: 5px 0;
+            }
+
+            &---subtitle {
+                color: v.$blue;
+                font-size: 13px;
+            }
+        }
+
+        article:first-child {
+            position: relative;
+            left: 170px;
+            bottom: 50px;
+        }
+
+        article:last-child {
+            position: relative;
+            left: 30px;
+            bottom: 50px;
+        }
+    }
+}

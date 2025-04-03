@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as v;
+
+body {
+    background-image: url("../img/beauty-woman.png"), url("../img/spa.svg"), linear-gradient(to right, white 0%, white 66%, v.$blue-sky 66%, v.$blue-sky 100%);
+    background-size: 90% 88%, 60% 50%, 100% 70%;
+    background-repeat: no-repeat;
+    background-position: right top 44px, right -60px top 40px, left top;
+}
